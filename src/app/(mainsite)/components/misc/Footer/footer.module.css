@@ -1,0 +1,201 @@
+.footer{
+    padding-top: 4vw;
+    background-color: var(--dark-color);
+    color: var(--secondary-text-color);
+}
+
+.footer a{
+    transition: 0.3s color;
+    position: relative;
+}
+.footer a::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: -6px;
+    left:0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--secondary-text-color);
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: 0.3s transform, 0.3s background-color;
+}
+.footer a:hover{
+    color: var(--primary-color);
+}
+.footer a:hover::after{
+    background-color: var(--primary-color);
+    transform: scaleX(1);
+}
+.content{
+    display: inline-flex;
+    width: 60%;
+    padding-bottom: 2vw;
+    margin: 0 20%;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(63, 63, 63);
+}
+
+.logo{
+    width: 8vw;
+    height: 8vw;
+    object-fit: contain;
+    object-position: center;
+}
+
+.links{
+    display: flex;
+    align-items: flex-start;
+    gap: 5vw;
+}
+
+.listTitle{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--secondary-font);
+    padding-bottom: 0.5vw;
+    color: var(--primary-color);
+}
+
+.listItem{
+    color: var(--secondary-text-color);
+    display: block;
+    margin: 0.8vw 0;
+    font-size: 1.2rem;
+}
+
+.listItem a, .copyright a{
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+
+.contactItem{
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.4vw;
+    max-width: 20vw;
+    word-break: break-all;
+}
+
+.contactItem svg{
+    width: 1.2vw;
+    height: 1.2vw;
+    flex: none;
+    color: var(--primary-color);
+}
+
+.copyright{
+    padding: 2vw 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    .footer{
+        padding-top: 5vw;
+    }
+    .content{
+        width: 95%;
+        padding-bottom: 4vw;
+        margin: 0 2.5%;
+        flex-direction: column;
+        align-items: center;
+        gap: 4vw;
+    }
+    
+    .logo{
+        width: 15vw;
+        height: 15vw;
+    }
+    
+    .links{
+        gap: 6vw;
+    }
+    
+    .listTitle{
+        font-size: 2rem;
+        padding-bottom: 1vw;
+    }
+    
+    .listItem{
+        margin: 1.8vw 0;
+        font-size: 1.6rem;
+    }
+    
+    .contactItem{
+        gap: 0.8vw;
+    max-width: 35vw;
+    }
+    
+    .contactItem svg{
+        width: 3vw;
+        height: 3vw;
+        flex: none;
+    }
+    
+    .copyright{
+        padding: 3vw 0;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    .footer{
+        padding-top: 8vw;
+    }
+    .content{
+        width: 80%;
+        padding-bottom: 8vw;
+        margin: 0 10%;
+        flex-direction: column;
+        align-items: center;
+        gap: 8vw;
+    }
+    
+    .logo{
+        width: 30vw;
+        height: 30vw;
+    }
+    
+    .links{
+        gap: 8vw;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .listTitle{
+        text-align: center;
+        font-size: 2.5rem;
+        padding-bottom: 1vw;
+    }
+    
+    .listItem{
+        text-align: center;
+        margin: 3vw 0;
+        font-size: 1.6rem;
+    }
+    
+    .contactItem{
+        text-align: left;
+        gap: 1.5vw;
+        max-width: 50vw;
+    }
+    
+    .contactItem svg{
+        width: 6vw;
+        height: 6vw;
+    }
+    
+    .copyright{
+        padding: 6vw 0;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}
