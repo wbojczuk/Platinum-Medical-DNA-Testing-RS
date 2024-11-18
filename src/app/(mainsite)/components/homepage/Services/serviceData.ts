@@ -21,9 +21,9 @@ const serviceData: Service[] = [
     },
     {
         img: "./img/services/noninvasive.png",
-        name: "Non-Invasive DNA Testing",
-        shortDesc: "Platinum Medical & DNA Testing offers non-invasive DNA testing, a safe and painless way to obtain accurate results.",
-        desc: `Platinum Medical & DNA Testing offers non-invasive DNA testing, a safe and painless way to obtain accurate results. This method, often used for prenatal paternity testing, requires only a simple blood sample from the mother and a cheek swab from the potential father. It provides reliable answers without any risk to the baby, ensuring peace of mind for all involved.`
+        name: "Non-Invasive Pre Natal",
+        shortDesc: "Platinum Medical & DNA Testing offers non-invasive pre natal DNA testing, a safe and painless way to obtain accurate results.",
+        desc: `Platinum Medical & DNA Testing offers non-invasive pre natal DNA testing, a safe and painless way to obtain accurate results. This method, often used for prenatal paternity testing, requires only a simple blood sample from the mother and a cheek swab from the potential father. It provides reliable answers without any risk to the baby, ensuring peace of mind for all involved.`
     },
     {
         img: "./img/services/mitochondrial.png",
