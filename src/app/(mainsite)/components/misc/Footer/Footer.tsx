@@ -6,6 +6,14 @@ import Link from "next/link"
 export default function Footer() {
   return (
     <footer className={styles.footer}>
+      <div className="center">
+      <div className={styles.socialLinks}>
+          <a href="https://www.instagram.com/platinummedicaldnatesting/" target="_blank" className={styles.socialLink}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20"><path fill="currentColor" d="M13 10a3 3 0 1 1-6 0c0-.171.018-.338.049-.5H6v3.997c0 .278.225.503.503.503h6.995a.503.503 0 0 0 .502-.503V9.5h-1.049c.031.162.049.329.049.5m-3 2a2 2 0 1 0-.001-4.001A2 2 0 0 0 10 12m2.4-4.1h1.199a.301.301 0 0 0 .301-.3V6.401a.301.301 0 0 0-.301-.301H12.4a.301.301 0 0 0-.301.301V7.6c.001.165.136.3.301.3M10 .4A9.6 9.6 0 0 0 .4 10a9.6 9.6 0 0 0 9.6 9.6a9.6 9.6 0 0 0 9.6-9.6A9.6 9.6 0 0 0 10 .4m5 13.489C15 14.5 14.5 15 13.889 15H6.111C5.5 15 5 14.5 5 13.889V6.111C5 5.5 5.5 5 6.111 5h7.778C14.5 5 15 5.5 15 6.111z"></path></svg>
+          </a>
+          
+        </div>
+      </div>
       <div className={styles.content}>
 
         <img src="/img/logo.png" width={512} height={512} className={styles.logo} alt="Main Logo"/>
@@ -24,9 +32,6 @@ export default function Footer() {
                 <li className={styles.listItem}>
                   <Link href="/contact">Contact</Link>
                 </li>
-                <li className={styles.listItem}>
-                  <Link href="/privacy-policy">Privacy Policy</Link>
-                </li>
 
               </ul>
             </aside>
@@ -34,10 +39,9 @@ export default function Footer() {
             <aside>
               <h3 className={styles.listTitle}>Categories</h3>
               <ul className={styles.list}>
-
-                <span className={styles.listItem}>Category</span>
-                <span className={styles.listItem}>Category</span>
-                <span className={styles.listItem}>Category</span>
+                <span className={styles.listItem}>DNA Testing</span>
+                <span className={styles.listItem}>St. Louis DNA</span>
+                <span className={styles.listItem}>Paternal DNA</span>
               
               </ul>
             </aside>

@@ -1,0 +1,147 @@
+#detailsPaneWrapper{
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    visibility:hidden;
+}
+#detailsPaneWrapper .shader{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+    transition: 0.4s opacity;
+    opacity: 0;
+}
+
+#detailsPane{
+    position: absolute;
+    display: inline-block;
+    top:0;
+    right:0;
+    width: 25%;
+    padding: 5% 10% 5% 5%;
+    height: 90%;
+    background-color: var(--primary-bg);
+    transition: 0.3s transform;
+    transform: translateX(100%);
+    color: var(--secondary-text-color);
+    overflow: auto;
+}
+
+#detailsPane img{
+    width: 100%;
+    aspect-ratio: 2/1.3;
+    object-fit: cover;
+}
+
+#detailsPaneClose{
+    display: inline-block;
+    position: absolute;
+    top: 2.5%;
+    right: 5%;
+    width: 10%;
+    aspect-ratio: 1/1;
+    background-image: url("/img/close_icon.svg");
+    background-size: 100%;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s filter;
+}
+#detailsPaneClose:hover{
+    filter: brightness(80%);
+}
+
+#detailsPaneName{
+    font-size: 2.5vw;
+    margin-top: 1vw;
+}
+#detailsPaneDescription{
+    margin-top: 2vw;
+    white-space:pre-line;
+    font-size: 1.1vw;
+    padding-right: 10%;
+
+}
+
+#addServiceToForm{
+    margin: 2vw 0;
+  
+}
+
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    #detailsPane{
+        width: 40%;
+        padding: 5% 10% 10% 5%;
+    }
+
+    #detailsPaneClose{   
+        width: 13%;
+    }
+    #detailsPane img{
+        margin-top: 6vw;
+    }
+    #detailsPaneName{
+        margin-top: 2vw;
+        font-size: 3.5vw;
+        
+    }
+    #detailsPaneDescription{
+        font-size: 1.5rem;
+    }
+    
+    #addServiceToForm{
+        font-size: 1.5vw;
+        padding: 1vw 2.5vw;
+        cursor: pointer;
+        transition: 0.3s background-color;
+    }
+}
+
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    #detailsPane{
+        width: 70%;
+        padding: 5% 10% 20% 5%;
+    }
+    
+    #detailsPaneClose{   
+        width: 15%;
+        top: 1%;
+        right: 5%;
+    }
+    #detailsPane img{
+        margin-top: 7vh;
+    }
+    #detailsPaneName{
+        font-size: 3vh;
+        margin-top: 3vh;
+        padding-right: 15%;
+    }
+    #detailsPaneDescription{
+        font-size: 1.5vh;
+        padding-right: 10%;
+    }
+    
+    #addServiceToForm{
+        font-size: 1.5vh;
+        margin-top: 2vh;
+        padding: 0.8vh 2.5vh;
+        cursor: pointer;
+        transition: 0.3s background-color;
+    }
+}
+
+ 

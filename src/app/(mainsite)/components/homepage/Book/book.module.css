@@ -1,0 +1,51 @@
+.find{
+    position: relative;
+    padding: calc(var(--section-padding-top) * 2) 0;
+    color: var(--primary-text-color);
+    display: inline-block;
+    width: 90%;
+    margin: 5%;
+    outline: 1.5vw solid var(--secondary-color);
+}
+
+.find h2{
+    text-align: center;
+    font-size: 6rem;
+    color: var(--secondary-color);
+}
+
+.find h3{
+    padding: 4vw 29%;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    color: var(--secondary-color);
+}
+
+/* SMALL LAPTOP STYLES */
+@media only screen and (min-width: 991px) and (max-width: 1400px){
+
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    .find h3{
+        padding: 5vw 20%;
+        font-size: 2rem;
+    }
+    .find h2{
+        font-size: 4.5rem;
+    }
+}
+
+ /* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    .find h2{
+        padding: 0 10%;
+        font-size: 4.5rem;
+    }
+    .find h3{
+        padding: 8vw 10%;
+    }
+}

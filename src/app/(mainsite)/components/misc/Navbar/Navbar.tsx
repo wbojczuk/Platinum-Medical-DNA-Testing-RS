@@ -5,7 +5,6 @@ import styles from "./navbar.module.css"
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import { usePathname } from "next/navigation"
-import NavMultiOption from "./NavMultiOption"
 import NavOption from "./NavOption"
 
 
@@ -21,8 +20,10 @@ export default function Navbar() {
 
   const homeRef: any = useRef()
   const aboutRef: any = useRef()
+  const faqRef: any = useRef()
+  const learnRef: any = useRef()
   const contactRef: any = useRef()
-  const reviewsRef: any = useRef()
+  const endorsementsRef: any = useRef()
 
   const hamburgerRef: any = useRef()
   const contentRef: any = useRef()
@@ -39,12 +40,12 @@ export default function Navbar() {
       ref: aboutRef
     },
     {
-      triggers: ["/contact"],
-      ref: contactRef
+      triggers: ["/learn"],
+      ref: learnRef
     },
     {
-      triggers: ["/reviews"],
-      ref: reviewsRef
+      triggers: ["/faq"],
+      ref: faqRef
     },
     {
       triggers: ["/", "/home"],
@@ -71,20 +72,6 @@ export default function Navbar() {
     setIsOnTouch(isOnTouch)
     setIsOnMobile(window.matchMedia("(max-width: 649px)").matches)
     
-    if(window.scrollY > 10){
-      navbarAnimIn()
-    }else{
-      navbarAnimOut()
-    }
-
-    window.addEventListener("scroll", ()=>{
-      if(window.scrollY > 10){
-        navbarAnimIn()
-      }else{
-        navbarAnimOut()
-      }
-    })
-
     if(isOnTouch){
       window.addEventListener("click", (evt)=>{
         //@ts-ignore
@@ -95,15 +82,6 @@ export default function Navbar() {
     }
   }, [])
 
-  function navbarAnimIn(){
-    // const topbarStyles = window.getComputedStyle(topBarRef.current)
-    // const topAmt = parseFloat(topbarStyles.height) + parseFloat(topbarStyles.paddingTop) + parseFloat(topbarStyles.paddingBottom)
-    // navRef.current.style.transform = `translateY(-${topAmt}px)`
-  }
-
-  function navbarAnimOut(){
-    // navRef.current.style.transform = "translateY(0)"
-  }
 
 
   function toggleMenu(){
@@ -165,21 +143,6 @@ export default function Navbar() {
   return (
     <nav ref={navRef} className={styles.mainNav}>
 
-      <div ref={topBarRef} className={styles.topBar}>
-        <span className={styles.topBarText}>Need some construction done? Contact us today!</span>
-
-        <div className={styles.topBarLinks}>
-          <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_NUMBER}`}> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"></path></svg>{process.env.NEXT_PHONE_NUMBER_FORMATTED}</a>
-
-          <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_ADDRESS}`}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"></path></svg>{process.env.NEXT_PUBLIC_EMAIL_ADDRESS}</a>
-
-          <a href="https://google.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"></path></svg>{process.env.NEXT_PUBLIC_BUSINESS_CITY_STATE}</a>
-
-          
-          
-        </div>
-      </div>
-
       <div className={styles.navContent}>
       <Link href="/" className={styles.logo}>
         <img src="/img/logo.png" className={styles.logoImg} width={500} height={250} alt="Logo" />
@@ -204,36 +167,32 @@ export default function Navbar() {
           <NavOption
           title="Home"
           url="/"
-          icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8z"></path></svg>}
           ref={homeRef}
           />
 
           <NavOption
-          title="About Us"
+          title="About"
           url="/about"
-          icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M13 9h-2V7h2m0 10h-2v-6h2m-1-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2"></path></svg>}
           ref={aboutRef}
           />
 
-          <NavOption
-          title="Reviews"
-          url="/reviews"
-          icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"></path></svg>}
-          ref={reviewsRef}
+<NavOption
+          title="FAQ"
+          url="/faq"
+          ref={faqRef}
           />
 
           <NavOption
-          title="Contact"
-          url="/contact"
-          icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"></path></svg>}
-          ref={contactRef}
+          title="Learn More"
+          url="/learn"
+          ref={learnRef}
           />
+
 
           
-          <a href={"tel:"+process.env.NEXT_PUBLIC_PHONE_NUM} className={styles.cta}>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"></path></svg>
-            <span>CALL US {process.env.NEXT_PUBLIC_PHONE_NUM_FORMATTED}</span>
-          </a>
+          <Link href="/contact" className={styles.cta}>
+            <span>Contact</span>
+          </Link>
           
 
           </ul>

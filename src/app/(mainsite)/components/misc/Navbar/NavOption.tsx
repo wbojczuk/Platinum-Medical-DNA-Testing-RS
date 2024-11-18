@@ -1,7 +1,7 @@
 import styles from "./navbar.module.css"
 import Link from "next/link"
 import { useEffect, useRef, useState, useImperativeHandle, forwardRef, ReactNode } from "react"
-import { InlineIcon } from "@iconify/react"
+
 
 interface optionProps {
     ref: any,

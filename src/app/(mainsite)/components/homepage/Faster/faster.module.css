@@ -1,0 +1,124 @@
+.faster{
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 80%;
+    margin: var(--section-padding-top) 8%;
+    padding: 2% 1%;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.fasterItem{
+    width: 25%;
+    padding: 1vw calc(25% / 6);
+}
+
+.fasterItem:not(:nth-child(1)){
+    border-left: 1px solid rgba(255,255,255,0.3);
+}
+
+.fasterItem svg{
+    width: 3.5vw;
+    height: 3.5vw;
+}
+
+.fasterItem svg path, .fasterItem svg circle{
+    fill: white;
+    color: white;
+}
+
+.fasterItem h3 span{
+    margin: 0 0 1vw 0;
+    font-size: 3.5rem;   
+    font-weight: 800;
+    position: relative;
+    display: inline-block !important;
+}
+
+.fasterItem span{
+    line-height: 180%;
+    font-size: 1.1rem;
+    display: block;
+    /* padding-right: 10%; */
+    
+}
+
+.fasterItem span:not(.fasterItem h3 span){
+    color: var(--secondary-text-color);
+}
+/* TABLET AND LOWER STYLES */
+@media only screen and (max-width: 990px){
+    .faster{
+        width: 98%;
+        margin: var(--section-padding-top) 0;
+    }
+    
+    .fasterItem{
+        width: 30%;
+        padding: 1vw calc(10% / 6);
+    }
+    
+    .fasterItem:not(:nth-child(1)){
+        border-left: 1px solid rgba(255,255,255,0.3);
+    }
+    
+    .fasterItem svg{
+        width: 5vw;
+        height: 5vw;
+    }
+    
+    .fasterItem h3{
+        margin: 0.2vw 0 1vw 0;
+        font-size: 2.2rem;   
+    }
+    
+    .fasterItem span{
+        padding-right: 10%;
+    }
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+ 
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    .faster{
+        width: 60%;
+        margin: var(--section-padding-top) 18%;
+        flex-direction: column;
+    }
+    
+    .fasterItem{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        padding: 8vw 5%;
+    }
+    
+    .fasterItem:not(:nth-child(1)){
+        border-left: none;
+        border-top: 1px solid rgba(255,255,255,0.3);
+    }
+    
+    .fasterItem svg{
+        width: 10vw;
+        height: 10vw;
+    }
+    
+    .fasterItem h3{
+        margin: 1vw 0 2vw 0;
+        font-size: 2rem;   
+    }
+    
+    .fasterItem span{
+        padding-right: 0;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
