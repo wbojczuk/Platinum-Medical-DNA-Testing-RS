@@ -1,0 +1,178 @@
+.contactInfo{
+    position: relative;
+    padding: var(--section-padding-top) 0;
+}
+
+.infoWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+
+.info{
+    width: 20%;
+    aspect-ratio: 1/1;
+    background: var(--gradient);
+    border-radius: 10px;
+    color: var(--primary-text-color);
+    overflow: hidden;
+}
+
+.iconWrapper{
+    overflow:visible;
+    position: relative;
+    height: 35%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 5vw;
+    height: 5vw;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    z-index: 5;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+}
+
+.icon svg{
+    width: 3vw;
+    height: 3vw;
+    color: white;
+}
+
+.textInfo{
+    padding-top: 4vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+.textInfo h2{
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.textInfo a{
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-size: 1.3rem;
+    word-break: break-all;
+    
+}
+
+.email{
+    /* padding: 0 2vw; */
+    font-size: 1rem !important;
+}
+
+.socialIcon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3vw;
+    height: 3vw;
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color) !important;
+    border-radius: 50%;
+}
+
+.socialIcon svg{
+    width: 2vw;
+    height: 2vw;
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    .infoWrapper{
+        gap: 2vw;
+    }
+    .info{
+        width: 30%;
+    }
+    .icon{
+        width: 7.5vw;
+        height: 7.5vw;
+    }
+    
+    .icon svg{
+        width: 5vw;
+        height: 5vw;
+    }
+    
+    .textInfo{
+        padding-top: 6vw;
+        gap: 1.5vw;
+    }
+    
+    .textInfo h2{
+        font-size: 2.5rem;
+        line-height: 120%;
+    }
+    
+    .textInfo a{
+        font-size: 1.6rem;
+    }
+    
+    .socialIcon{
+        width: 5vw;
+        height: 5vw;
+    }
+    .socialIcon svg{
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+}
+
+ /* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    .infoWrapper{
+        gap: 3vw;
+        flex-direction: column;
+    }
+    .info{
+        width: 50%;
+    }
+    .icon{
+        width: 12vw;
+        height: 12vw;
+    }
+    
+    .icon svg{
+        width: 8vw;
+        height: 8vw;
+    }
+    
+    .textInfo{
+        padding-top: 6vw;
+        gap: 1.5vw;
+    }
+    
+    .textInfo h2{
+        font-size: 2.5rem;
+        line-height: 120%;
+    }
+    
+    .textInfo a{
+        font-size: 1.6rem;
+    }
+    
+    .socialIcon{
+        width: 10vw;
+        height: 10vw;
+    }
+    .socialIcon svg{
+        width: 7vw;
+        height: 7vw;
+    }
+}

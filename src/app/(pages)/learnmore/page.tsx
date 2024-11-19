@@ -1,11 +1,11 @@
-import AboutContent from "@/app/(mainsite)/components/aboutpage/AboutContent/AboutContent"
-import ServiceArea from "@/app/(mainsite)/components/homepage/ServiceArea/ServiceArea"
+import Faster from "@/app/(mainsite)/components/homepage/Faster/Faster"
+import LearnMore from "@/app/(mainsite)/components/learnmorepage/LearnMore/LearnMore"
 import PageTitle from "@/app/(mainsite)/components/misc/PageTitle/PageTitle"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-	  title: `About | ${process.env.NEXT_PUBLIC_WEBSITE_TITLE}`,
-	  description: `About | ${process.env.NEXT_PUBLIC_WEBSITE_DESC}`,
+	  title: `Learn More | ${process.env.NEXT_PUBLIC_WEBSITE_TITLE}`,
+	  description: `Learn More | ${process.env.NEXT_PUBLIC_WEBSITE_DESC}`,
 openGraph: {
 title: `${process.env.NEXT_PUBLIC_WEBSITE_TITLE}`,
 description: `${process.env.NEXT_PUBLIC_WEBSITE_DESC}`,
@@ -26,12 +26,12 @@ description: `${process.env.NEXT_PUBLIC_WEBSITE_DESC}`,
 }
 }
 
-export default function AboutPage(){
+export default function LearnmorePage(){
 	 return(
 	 	 <>
-			<PageTitle pageTitle="About" />
-			<AboutContent />
-			<ServiceArea />
+			<PageTitle pageTitle="Learn More" />
+			<LearnMore />
+			<Faster />
 	 	 </>
 	 )
 }

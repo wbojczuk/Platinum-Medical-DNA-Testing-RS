@@ -10,7 +10,7 @@ return (
         <Link className='main-link' href={`/contact`}>Contact</Link>
     </div>
     <div className={styles.imgWrapper}>
-        <img src="/img/keep.png" alt="image of a woman on couch relaxing" className="bg-img" />
+        <img src="/img/keep.webp" alt="image of a woman on couch relaxing" className="bg-img" />
         <div className={`shader ${styles.shader}`}></div>
     </div>
  </div>

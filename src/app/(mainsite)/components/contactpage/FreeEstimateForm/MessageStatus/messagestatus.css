@@ -1,0 +1,18 @@
+#messageSuccess{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.2);
+    transition: 0.3s opacity;
+}
+#messageSuccessWrapper{
+    display: inline-block;
+    width: 25%;
+    aspect-ratio: 1/1;
+}

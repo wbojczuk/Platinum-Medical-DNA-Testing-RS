@@ -1,0 +1,226 @@
+#estimateForm{
+    position: relative;
+    left: -0.5vw;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.85);
+    /* padding: 1.5vw; */
+    padding-top: 0;
+    padding-bottom: 2vw;
+    color: var(--secondary-text-color);
+    width: 28vw;
+    min-height: 33rem;
+    /* box-shadow: 0px 4px 8px rgba(0,0,0,0.5); */
+}
+
+#estimateFormTitle{
+    font-size: 2.5rem;
+    font-family: var(--primary-font);
+    background-color: var(--primary-bg);
+    color: var(--secondary-text-color);
+    text-align: center;
+    line-height: 120%;
+    font-weight: 900;
+    padding: 1vw 0 2vw 0;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+    position: relative;
+
+}
+
+.input-wrapper{
+    position: relative;
+    margin: 1.5vw 0.5vw;
+}
+.input-wrapper:has(.half-input){
+    display: flex;
+    justify-content: space-between;
+}
+#formPhoneIcon:not(.company-name-icon){
+    top: 0%;
+    left: 3%;
+    height: 110%;
+    width: 11%;
+}
+#estimateForm input:not(input[type="submit"]):focus, #estimateForm textarea:focus{
+    outline: none;
+    border-color: var(--primary-color);
+}
+#estimateForm input, #estimateForm textarea{
+    display: inline-block;
+    font-size: 1.2em;
+    font-family: var(--main-font);
+    font-weight: 400;
+    width: 80%;
+    margin: 0 9%;
+    border: none;
+    border-bottom: 2px solid var(--primary-text-color);
+    padding: 1.2vw 0;
+    background-color: transparent;
+}
+
+#estimateForm input.half-input{
+    width: 46%;
+}
+#estimateForm .input-wrapper .half-input:nth-child(2){
+    margin-left: 4%;
+}
+
+#estimateForm #phoneInput{
+    width: 101%;
+}
+
+#estimateForm input{
+    padding-left: 2%;
+}
+
+#estimateFormSubmit{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    border-radius: 0;
+}
+#estimateForm input[type="submit"]:hover{
+    filter: brightness(75%);
+}
+
+#estimateForm textarea{
+    resize: none;
+    width: 80%;
+    padding-left: 2%;
+    height: 5vw;
+    border: 2px solid black;
+}
+
+.form-disclaimer{
+    padding: 1vw 1.5vw 0 1.5vw;
+    text-align: center;
+    font-weight: bold;
+}
+
+#estimateForm .main-link{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    width: 50%;
+}
+
+
+/* Small Laptop Styles */
+@media only screen and (max-width: 1400px){
+    
+    #estimateForm{
+        width: 28vw;
+    }
+    
+    #estimateFormTitle{
+        font-size: 2.5rem;
+    }
+    #estimateForm input, #estimateForm textarea{
+        padding: 1.2vw 0 1.2vw 2%;
+    }
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    .form-disclaimer{
+        padding: 1.5vw 2vw 0 2vw;
+
+    }
+    .header-content-wrapper:has(#estimateForm){
+        margin: 0 0 8vw 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #estimateForm{
+        /* padding: 2vw; */
+        padding-top: 0;
+        width: 42vw;
+    }
+    
+    #estimateFormTitle{
+        font-size: 2.5em;
+    }
+    
+    .input-wrapper{
+        margin: 2vw 0;
+    }
+    #estimateForm input, #estimateForm textarea{
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        font-size: 1.5rem;
+    }
+    .input-wrapper img{
+        left: 2%;
+    }
+    #formPhoneIcon:not(.company-name-icon){
+        left: 1%;
+    }
+    #estimateForm input[type="submit"]{
+        font-size: 2rem;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    .form-disclaimer{
+        padding: 3vw 3.5vw 0 3.5vw;
+
+    }
+    .header-content-wrapper:has(#estimateForm){
+        margin: 0 0 8vw 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #estimateForm{
+        /* margin-top: 8vw; */
+        /* padding: 4vw; */
+        width: 65vw !important;
+        padding-top: 0;
+        width: 100%;
+    }
+    
+    #estimateFormTitle{
+        font-size: 2.4em;
+        padding-bottom: 4vw;
+        padding-top: 4vw;
+    }
+    .input-wrapper{
+        margin: 4vw 0
+    }
+    #estimateForm input, #estimateForm textarea{
+        padding: 3vw 0;
+        padding-left: 2%;
+        font-size: 1.3rem;
+    }
+    .input-wrapper img{
+        left: 2%;
+    }
+    #formPhoneIcon:not(.company-name-icon){
+        left: 1%;
+    }
+    #estimateForm input[type="submit"]{
+        font-size: 1.8rem;
+    }
+    #estimateForm textarea{
+        height: 10vw;
+    }
+    #estimateForm .main-link{
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+}
+
+/* VERY SMALL  MOBILE STYLES */
+@media only screen and (max-width: 290px){
+    #estimateForm{
+        width: 80vw;
+    }
+    #estimateFormTitle{
+        font-size: 2rem;
+    }
+    .input-wrapper{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+}
