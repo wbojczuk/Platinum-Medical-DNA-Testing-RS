@@ -1,4 +1,4 @@
-"use client"
+
 import styles from './formandmap.module.css';
 import FreeEstimateForm from '../FreeEstimateForm/FreeEstimateForm';
 
