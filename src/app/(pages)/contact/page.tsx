@@ -32,13 +32,12 @@ export default function ContactPage(){
 	 return(
 	 	 <>
 			<PageTitle pageTitle="Contact" />
-			<ContactInfo />
+			<div style={{position: "relative"}}>
+				<ContactInfo />
 				<FormAndMap />
-			{/* <div style={{position: "relative"}}>
-				
 				<div style={{backgroundColor: "rgba(41, 1, 48, .77)"}} className="shader"></div>
 				<img src="/img/contact.webp" alt="image of a happy family" className="bg-img" />
-			</div> */}
+			</div>
 	 	 </>
 	 )
 }
