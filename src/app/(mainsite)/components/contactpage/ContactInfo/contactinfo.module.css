@@ -3,6 +3,10 @@
     padding: var(--section-padding-top) 0;
 }
 
+.widget{
+    margin-bottom: var(--section-padding-top);
+}
+
 .infoWrapper{
     display: flex;
     align-items: center;

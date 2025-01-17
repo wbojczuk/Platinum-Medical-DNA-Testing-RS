@@ -6,9 +6,11 @@ import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import { usePathname } from "next/navigation"
 import NavOption from "./NavOption"
+import { PopupWidget } from "react-calendly"
 
 
 export default function Navbar() {
+  const [elem, setElem] = useState(<></>)
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [isOnTouch, setIsOnTouch] = useState(false)
@@ -68,6 +70,12 @@ export default function Navbar() {
 
 
   useEffect(()=>{
+    setElem(<PopupWidget
+      url='https://calendly.com/platinummedical-dnatesting'
+      text='Schedule time with me'
+      rootElement={document.querySelector("body")!}
+      />)
+      
     const isOnTouch = window.matchMedia("(max-width: 990px)").matches
     setIsOnTouch(isOnTouch)
     setIsOnMobile(window.matchMedia("(max-width: 649px)").matches)
@@ -141,6 +149,8 @@ export default function Navbar() {
 
 
   return (
+    <>
+    {elem}
     <nav ref={navRef} className={styles.mainNav}>
 
       <div className={styles.navContent}>
@@ -206,5 +216,6 @@ export default function Navbar() {
 
       
     </nav>
+    </>
   )
 }

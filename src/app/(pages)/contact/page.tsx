@@ -4,6 +4,7 @@ import ContactInfo from "@/app/(mainsite)/components/contactpage/ContactInfo/Con
 import FormAndMap from "@/app/(mainsite)/components/contactpage/FormAndMap/FormAndMap"
 import PageTitle from "@/app/(mainsite)/components/misc/PageTitle/PageTitle"
 import type { Metadata } from "next"
+import Script from "next/script"
 
 export const metadata: Metadata = {
 	  title: `Contact | ${process.env.NEXT_PUBLIC_WEBSITE_TITLE}`,
@@ -38,6 +39,7 @@ export default function ContactPage(){
 				<div style={{backgroundColor: "rgba(41, 1, 48, .77)"}} className="shader"></div>
 				<img src="/img/contact.webp" alt="image of a happy family" className="bg-img" />
 			</div>
+			
 	 	 </>
 	 )
 }

@@ -1,9 +1,17 @@
-
+"use client"
+import Script from 'next/script';
 import styles from './contactinfo.module.css';
+import { useEffect, useState } from 'react';
+import { InlineWidget } from 'react-calendly';
 
 export default function ContactInfo(){
+    const [scriptElem, setScriptElem] = useState(<></>)
+
 return (
  <div className={styles.contactInfo}>
+     <div className={`center ${styles.widget}`}>
+        <InlineWidget url='https://calendly.com/platinummedical-dnatesting' />
+    </div>
     <div className={styles.infoWrapper}>
 
     <div className={styles.info}>
@@ -48,5 +56,6 @@ return (
         </div>
 
     </div>
+   
  </div>
 )};

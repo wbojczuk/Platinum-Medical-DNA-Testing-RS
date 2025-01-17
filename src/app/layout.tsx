@@ -14,6 +14,7 @@ import Script from 'next/script';
 
 // BUTTON STYLES - .main-button
 import "./(mainsite)/components/styling_sheets/links/mainlink.css"
+import { PopupWidget } from 'react-calendly';
 
 
 const primaryFont = Open_Sans({ subsets: ['latin'], weight: [ "300", "400", "500", "600", "700", "800"], display: "swap", variable: "--primary-font" })
@@ -62,9 +63,15 @@ export default function RootLayout({
         `}
       </Script></>}
 
+      
+
+      
+
         <Navbar />
 
         {children}
+
+        
 
         <Footer />
         
