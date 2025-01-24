@@ -9,9 +9,9 @@ export default function ContactInfo(){
 
 return (
  <div className={styles.contactInfo}>
-     <div className={`center ${styles.widget}`}>
+     {/* <div className={`center ${styles.widget}`}>
         <InlineWidget url='https://calendly.com/platinummedical-dnatesting' />
-    </div>
+    </div> */}
     <div className={styles.infoWrapper}>
 
     <div className={styles.info}>

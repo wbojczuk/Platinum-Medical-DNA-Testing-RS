@@ -70,11 +70,11 @@ export default function Navbar() {
 
 
   useEffect(()=>{
-    setElem(<PopupWidget
-      url='https://calendly.com/platinummedical-dnatesting'
-      text='Schedule time with me'
-      rootElement={document.querySelector("body")!}
-      />)
+    // setElem(<PopupWidget
+    //   url='https://calendly.com/platinummedical-dnatesting'
+    //   text='Schedule time with me'
+    //   rootElement={document.querySelector("body")!}
+    //   />)
       
     const isOnTouch = window.matchMedia("(max-width: 990px)").matches
     setIsOnTouch(isOnTouch)
