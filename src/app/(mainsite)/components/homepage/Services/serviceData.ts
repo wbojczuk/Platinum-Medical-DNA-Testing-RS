@@ -20,10 +20,10 @@ const serviceData: Service[] = [
         desc: `Trio DNA Testing at Platinum Medical & DNA Testing involves analyzing samples from a child, the mother, and the alleged father to confirm paternity with the highest level of accuracy. This method ensures reliable results by comparing all three DNA profiles, providing clarity and confidence for your family.`
     },
     {
-        img: "./img/services/noninvasive.webp",
-        name: "Non-Invasive Pre Natal",
-        shortDesc: "Platinum Medical & DNA Testing offers non-invasive pre natal DNA testing, a safe and painless way to obtain accurate results.",
-        desc: `Platinum Medical & DNA Testing offers non-invasive pre natal DNA testing, a safe and painless way to obtain accurate results. This method, often used for prenatal paternity testing, requires only a simple blood sample from the mother and a cheek swab from the potential father. It provides reliable answers without any risk to the baby, ensuring peace of mind for all involved.`
+        img: "./img/services/maternity.webp",
+        name: "Maternity Testing",
+        shortDesc: "Providing reliable maternity testing to confirm the biological relationship between a child and mother",
+        desc: `Platinum Medical & DNA Testing provides reliable maternity testing to confirm the biological relationship between a child and mother. This test is accurate, secure, and can be used for personal knowledge or legal purposes, offering peace of mind and clarity when it matters most.`
     },
     {
         img: "./img/services/mitochondrial.webp",
