@@ -13,7 +13,7 @@ export default function Services() {
   const [currentServiceDesc, setCurrentServiceDesc] = useState("");
   const [currentImg, setCurrentImg] = useState(null!);
   const [isDetailsPaneOpen, setIsDetailsPaneOpen] = useState(false);
-  const [elemAmt, setElemAmt] = useState(4)
+  const [elemAmt, setElemAmt] = useState(6)
 
   const wrapperRef: any = useRef();
 

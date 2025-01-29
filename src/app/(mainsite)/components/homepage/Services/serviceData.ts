@@ -30,6 +30,18 @@ const serviceData: Service[] = [
         name: "Mitochondrial DNA Testing",
         shortDesc: "Platinum Medical & DNA Testing offers Mitochondrial DNA Testing to trace maternal ancestry and confirm biological relationships through the maternal line.",
         desc: `Platinum Medical & DNA Testing offers Mitochondrial DNA Testing to trace maternal ancestry and confirm biological relationships through the maternal line. This test analyzes the unique DNA passed down from mothers to their children, providing valuable insights into family connections and genetic heritage. It’s a powerful tool for uncovering maternal lineage with precision and reliability.`
+    },
+    {
+        img: "./img/services/weight.webp",
+        name: "Healthy Weight",
+        shortDesc: "Platinum Medical & DNA Testing offers a Healthy Weight DNA test that analyzes genetic markers linked to your metabolism and body type.",
+        desc: `Platinum Medical & DNA Testing offers a Healthy Weight DNA test that analyzes genetic markers linked to your metabolism and body type. With this information, we create a personalized report to help you eat smarter, cook healthier, and exercise more effectively. Take the guesswork out of weight management and achieve your goals with a plan tailored to your unique DNA.`
+    },
+    {
+        img: "./img/services/foodpet.webp",
+        name: "Food & Pet Sensitivity",
+        shortDesc: "Platinum Medical & DNA Testing offers Food & Pet Sensitivity testing to help identify potential sensitivities at a cellular level.",
+        desc: `Platinum Medical & DNA Testing offers Food & Pet Sensitivity testing to help identify potential sensitivities at a cellular level. Using advanced DNA markers, this analysis provides valuable insights, allowing you to make targeted lifestyle changes for better health and well-being. Whether it's food or pet-related sensitivities, our testing helps you take control of your comfort and quality of life.`
     }
     
 ]
