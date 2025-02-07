@@ -26,10 +26,10 @@ const serviceData: Service[] = [
         desc: `Platinum Medical & DNA Testing provides reliable maternity testing to confirm the biological relationship between a child and mother. This test is accurate, secure, and can be used for personal knowledge or legal purposes, offering peace of mind and clarity when it matters most.`
     },
     {
-        img: "./img/services/mitochondrial.webp",
-        name: "Mitochondrial DNA Testing",
-        shortDesc: "Platinum Medical & DNA Testing offers Mitochondrial DNA Testing to trace maternal ancestry and confirm biological relationships through the maternal line.",
-        desc: `Platinum Medical & DNA Testing offers Mitochondrial DNA Testing to trace maternal ancestry and confirm biological relationships through the maternal line. This test analyzes the unique DNA passed down from mothers to their children, providing valuable insights into family connections and genetic heritage. It’s a powerful tool for uncovering maternal lineage with precision and reliability.`
+        img: "./img/services/infedelity.webp",
+        name: "DNA Detection Test/Infidelity",
+        shortDesc: "Platinum Medical & DNA Testing offers DNA Detection Tests for infidelity concerns, helping determine if DNA is present on a garment or other items.",
+        desc: `Platinum Medical & DNA Testing offers DNA Detection Tests for infidelity concerns, helping determine if DNA is present on a garment or other items. A buccal swab may be required for comparison, and additional items can be tested for an extra fee. This test is for personal knowledge only (P.O.M) and is not court-admissible, providing discreet and confidential answers for your peace of mind.`
     },
     {
         img: "./img/services/weight.webp",
